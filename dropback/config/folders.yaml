@@ -1,0 +1,26 @@
+ryancollinsdb:
+  folders: 
+    Personal:
+      secure: false
+    Documents:
+      secure: false
+Ryans-MacBook-Pro.local:
+  folders:
+    AddressBook:
+      secure: false
+    Clients:
+      secure: true
+    Documents:
+      secure: false
+    Finance:
+      secure: true
+    Projects:
+      secure: false
+    CloudDump:
+      secure: false
+    Writing:
+      secure: false
+    Career:
+      secure: true
+    ResourcesAndArtifacts:
+      secure: false
