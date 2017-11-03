@@ -1,7 +1,15 @@
 class Phase
+  
+  def initialize
+    singleton = class << self; self end
+    [:phasename, :execute, :description].each do |name|
+      singleton.send :define_method, name, lambda { raise "Abstract method. Needs to be defined in Phase subclass." }
+    end
+  end
+
   def start_message
-    print "BEING PHASE "
-    phasname
+    print "BEGIN PHASE: "
+    phasename
     description
   end
 
@@ -9,8 +17,5 @@ class Phase
   end
 
   def end_message
-  end
-
-  def execute
   end
 end
